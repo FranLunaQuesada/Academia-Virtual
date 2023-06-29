@@ -4,7 +4,7 @@ function pageLoaded() {
   keepColorHeader();
   menuHeaderPhone();
   formContact();
-  ubicationAcademy();
+  // ubicationAcademy();
   dinamicDateExams($GCExam, guardiaCivil);
   dinamicDateExams($PLExam, policiaNacional);
   dinamicDateExams($MTMExam, ejercito);
@@ -178,24 +178,24 @@ const formContact = () => {
   });
 };
 
-const ubicationAcademy = () => {
-  const mapDiv = document.querySelector(".map");
-  let map;
-  function initMap() {
-    navigator.geolocation.watchPosition(() => {
-      const pos = {
-        lat: 41.706999,
-        lng: -1.001539,
-      };
-      map = new google.maps.Map(mapDiv, {
-        center: pos,
-        zoom: 15,
-      });
-      marker = new google.maps.Marker({
-        position: pos,
-        map: map,
-      });
-    });
-  }
-  window.initMap = initMap;
-};
+// const ubicationAcademy = () => {
+//   const mapDiv = document.querySelector(".map");
+//   let map;
+//   function initMap() {
+//     navigator.geolocation.watchPosition(() => {
+//       const pos = {
+//         lat: 41.706999,
+//         lng: -1.001539,
+//       };
+//       map = new google.maps.Map(mapDiv, {
+//         center: pos,
+//         zoom: 15,
+//       });
+//       marker = new google.maps.Marker({
+//         position: pos,
+//         map: map,
+//       });
+//     });
+//   }
+//   window.initMap = initMap;
+// };

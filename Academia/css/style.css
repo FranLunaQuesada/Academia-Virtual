@@ -1602,13 +1602,6 @@ th {
   font-size: 1.8rem;
 }
 
-.location .map {
-  width: 50%;
-  height: 50rem;
-  border: 1rem solid var(--white-background);
-  margin: 4rem auto;
-}
-
 /* Pantalla ordenador */
 @media (min-width: 60rem) {
   header {
